@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1">
+
+    <parameter name="type" value="pc"/>
+    <parameter name="ram" value="4"/>
+    <parameter name="hdd" value="1000"/>
+    <parameter name="cpu" value="i7"/>
+
+    <test name="factory">
+        <groups>
+            <run>
+                <include name="main"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="creational.factory.factoryTests"/>
+        </classes>
+    </test>
+
+</suite>
